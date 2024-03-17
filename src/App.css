@@ -1,0 +1,184 @@
+.card {
+  background-color: #ffffff;
+  width: 450px;
+  height: 608px;
+  padding: 32px;
+  gap: 24px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 18px 0px #4b465c1a;
+}
+
+.card-container {
+  /* border: solid red 1px; */
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #4b465c;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email-input-container,
+.password-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-label-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-password-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: #169ad7;
+}
+
+.remember-me-container {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me-label {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.remember-me-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.remember-me-label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.remember-me-label input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.remember-me-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.remember-me-label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 3px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.btn-login {
+  border-radius: 6px;
+  background: #169ad7;
+  box-shadow: 0px 2px 4px 0px #a5a3ae4d;
+  border: none;
+  cursor: pointer;
+  height: 38px;
+  color: white;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: #169ad7;
+}
+
+.separator-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-top: -20px;
+}
+
+.hr-wrapper {
+  width: 100%;
+}
+
+.separator-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
